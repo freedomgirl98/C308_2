@@ -65,7 +65,7 @@ class Eats extends React.Component {
 class Clock extends React.Component {
   render() {
     let city = this.props.name;
-    var time = moment().tz(city).format('HH mm Z');
+    let time = moment().tz(city).format('HH mm Z');
     return (
       <Text>
         {city} - {time}
